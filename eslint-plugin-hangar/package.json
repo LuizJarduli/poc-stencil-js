@@ -1,0 +1,30 @@
+{
+    "name": "eslint-plugin-hangar",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "rm -rf dist && npx tsc && cp package.json dist/",
+        "test": "npx jest --runInBand --coverage"
+    },
+    "keywords": [
+        "eslint-plugin",
+        "hangar",
+        "design-system"
+    ],
+    "author": "New Rizon",
+    "license": "ISC",
+    "dependencies": {
+        "@types/jest": "^29.5.3",
+        "@typescript-eslint/eslint-plugin": "^5.1.0",
+        "@typescript-eslint/parser": "^5.1.0",
+        "@typescript-eslint/rule-tester": "^6.0.0",
+        "@typescript-eslint/scope-manager": "^5.1.0",
+        "@typescript-eslint/typescript-estree": "^5.1.0",
+        "@typescript-eslint/utils": "^5.1.0",
+        "eslint": "^8.44.0",
+        "jest": "^29.6.1",
+        "ts-jest": "^29.1.1",
+        "typescript": "^5.1.6"
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../style/icon-fonts';
+
+:host {
+    display: block;
+
+    .hangar-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--hangar-radius-sm);
+        border: none;
+        gap: 8px;
+        width: fit-content;
+        font-size: 20px;
+        padding: 16px 24px;
+        background-color: var(--hangar-primary-color);
+        color: var(--hangar-secondary-color);
+        transition: ease .3s;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: var(--hangar-disabled-primary-color) !important;
+            pointer-events: none !important;
+            color: var(--hangar-secondary-color) !important;
+            border-color: var(--hangar-disabled-primary-color) !important;
+        }
+
+        &:hover {
+            background-color: var(--hangar-hover-primary-color) !important;
+            color: var(--hangar-secondary-color) !important;
+            border-color: var(--hangar-hover-primary-color) !important;
+        }
+
+        &:active {
+            background-color: var(--hangar-pressed-primary-color) !important;
+            color: var(--hangar-secondary-color) !important;
+            border-color: var(--hangar-pressed-primary-color) !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}

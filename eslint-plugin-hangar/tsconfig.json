@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+       "target": "ES2015",
+       "module": "commonjs",
+       "sourceMap": false,
+       "outDir": "./dist",
+       "esModuleInterop": true,
+       "forceConsistentCasingInFileNames": true,
+       "strict": true,
+       "noUnusedLocals": true,
+       "skipLibCheck": true,
+       "types": [
+           "node"
+       ]
+    },
+    "include": [
+       "rules/**/*"
+    ],
+    "exclude": [
+       "node_modules",
+       "rules/**/*.spec.ts"
+    ]
+ }

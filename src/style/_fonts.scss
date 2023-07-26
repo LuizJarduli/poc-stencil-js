@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: "Roboto Italic";
+    src: url("../assets/fonts/Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../assets/fonts/Roboto/Roboto-Light.ttf");
+}
+
+$font-family-medium: "Roboto Medium";
+$font-family-regular: "Roboto Regular";
+$font-family-bold: "Roboto Bold";
+$font-family-italic: "Roboto Italic";
+$font-family-light: "Roboto Light";
+
+html, body {
+    font-family: $font-family-regular;
+
+    h1 {
+        color: var(--hangar-font-color-primary);
+        font-size: 2rem;
+        line-height: 2.344rem;
+    }
+
+    h1, h2 {
+        font-family: $font-family-bold;
+    }
+
+    h3 {
+        font-family: $font-family-medium;
+    }
+
+    h4, h5, h6 {
+        font-family: $font-family-bold;
+    }
+}

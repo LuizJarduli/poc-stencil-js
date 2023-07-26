@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/poc-design-system.esm.js"></script>
+    <script nomodule src="/build/poc-design-system.js"></script>
+    <link rel="stylesheet" href="/build/poc-design-system.css">
+  </head>
+  <body>
+    <hangar-button label="Placeholder Text"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="btn--rounded"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary btn--rounded"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="btn-default"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="btn--rounded btn-default"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary btn--rounded btn-default"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary btn-default"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="btn-compact"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="btn--rounded btn-compact"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary btn-compact"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary btn--rounded btn-compact"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary btn-compact" disabled="true"></hangar-button><br>
+    <hangar-button label="Placeholder Text" class="secondary btn--rounded btn-compact" disabled="true"></hangar-button><br>
+
+    <script>
+        // No html puro, é necessário utilizar listeners para o data-binding
+        window.onload = () => {
+        	const hangarButton = document.querySelector('hangar-button:first-of-type');
+
+        	hangarButton.addEventListener('buttonClick', () => {
+        		console.log('Clicado!');
+        	});
+        };
+    </script>
+</body>
+</html>

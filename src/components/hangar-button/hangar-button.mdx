@@ -1,0 +1,26 @@
+import { Controls, Canvas, Meta, Markdown } from '@storybook/blocks';
+
+import * as ButtonStories from './hangar-button.stories.ts';
+
+<Meta of={ButtonStories} />
+
+# hangar-button
+
+<Canvas of={ButtonStories.HangarButton} />
+
+---
+
+## Propriedades
+
+Possíveis propriedades do botão
+
+**OBS: o ícone (icons prop) é um objeto parseado de uma string, pois HTML estático não suporta objetos na sua renderização**
+<Controls />
+
+## Events
+
+`buttonClick: EventEmitter<MouseEvent>` - Define um evento a ser emitido no momento do clique do botão, fazendo assim o one-way data-binding
+
+## Shadow Parts
+
+`theme` - Basta utilizar as classes `.primary` ou `.secondary` para definir as variantes do botão

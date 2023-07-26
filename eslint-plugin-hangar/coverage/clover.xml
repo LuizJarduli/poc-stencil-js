@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1690376417173" clover="3.2.0">
+  <project timestamp="1690376417174" name="All files">
+    <metrics statements="19" coveredstatements="18" conditionals="20" coveredconditionals="15" methods="3" coveredmethods="3" elements="42" coveredelements="36" complexity="0" loc="19" ncloc="19" packages="2" files="2" classes="2"/>
+    <package name="enforce-component-suffix">
+      <metrics statements="15" coveredstatements="14" conditionals="20" coveredconditionals="15" methods="2" coveredmethods="2"/>
+      <file name="enforce-component-suffix.ts" path="/home/lugalokinho/Desktop/projetos/Dev/poc-stencil-lib/poc-design-system/eslint-plugin-hangar/rules/enforce-component-suffix/enforce-component-suffix.ts">
+        <metrics statements="15" coveredstatements="14" conditionals="20" coveredconditionals="15" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="4" falsecount="2"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="2" type="cond" truecount="6" falsecount="2"/>
+        <line num="36" count="2" type="cond" truecount="5" falsecount="1"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="create-rule.ts" path="/home/lugalokinho/Desktop/projetos/Dev/poc-stencil-lib/poc-design-system/eslint-plugin-hangar/rules/utils/create-rule.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

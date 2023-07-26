@@ -1,0 +1,33 @@
+hangar-button {
+    &.primary::part(theme) {
+        background-color: var(--hangar-primary-color);
+        color: var(--hangar-secondary-color);
+    }
+
+    &.secondary::part(theme) {
+        background-color: var(--hangar-secondary-color);
+        color: var(--hangar-primary-color);
+        border: var(--hangar-border-size-sm) solid var(--hangar-primary-color);
+    }
+
+    &.btn {
+        &-compact::part(theme) {
+            font-size: 16px;
+            padding: 10px 16px;
+        }
+
+        &-large::part(theme) {
+            font-size: 20px;
+            padding: 16px 24px;
+        }
+
+        &-default::part(theme) {
+            font-size: 16px;
+            padding: 16px 24px;
+        }
+
+        &--rounded::part(theme) {
+            border-radius: var(--hangar-radius-xxlg);
+        }
+    }
+}
