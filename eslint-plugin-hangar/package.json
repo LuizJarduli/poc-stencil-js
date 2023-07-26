@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "rm -rf dist && npx tsc && cp package.json dist/",
-        "test": "npx jest --runInBand --coverage"
+        "test": "npx jest --runInBand --coverage --verbose"
     },
     "keywords": [
         "eslint-plugin",

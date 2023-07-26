@@ -48,7 +48,12 @@ export class HangarButtonComponent implements IHangarButtonProperties {
 		this.icons = typeof icons === 'string' ? JSON.parse(icons) : icons;
 	}
 
-	public componentWillLoad() {
+	/**
+	 * componentWillLoad
+	 *
+	 * Ciclo de vida executado no momento em que o componente é inserido no DOM, antes de sua renderização completa
+	 */
+	public componentWillLoad(): void {
 		this.parseIcons(this.icons);
 	}
 

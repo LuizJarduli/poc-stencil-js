@@ -36,11 +36,13 @@ const enforceComponentSuffixRule = createRule<Options, MessageIds>({
 		const checkClassName = (node: TSESTree.Decorator) => {
 			const parent = node.parent;
 
-            // Valida se é uma classe decorada
+			// Valida se é uma classe decorada
 			if (parent?.type !== AST_NODE_TYPES.ClassDeclaration) {
 				return;
 			}
+
 			const className = parent?.id?.name;
+
 			if (!className?.endsWith('Component')) {
 				context.report({
 					node,

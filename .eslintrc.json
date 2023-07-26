@@ -22,6 +22,7 @@
     ],
     "rules": {
         "hangar/enforce-component-suffix": "error",
+        "hangar/enforce-tsdoc": "error",
         "indent": [
             "error",
             "tab"

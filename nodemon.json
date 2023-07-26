@@ -1,0 +1,9 @@
+{
+    "watch": [
+        "./src/**/*.@(ts|tsx)"
+    ],
+    "ext": "ts,tsx",
+    "ignore": ["*.spec.@(ts|tsx)"],
+    "delay": "3",
+    "exec": "npm run lint && npm run build"
+}
