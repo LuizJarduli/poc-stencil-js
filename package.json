@@ -19,14 +19,14 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build",
-    "start": "stencil build --dev --watch --serve",
-    "start:storybook": "conc \"npx nodemon -L\" \"npm run storybook\"",
-    "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build": "npx stencil build",
+    "start": "npx stencil build --dev --watch --serve",
+    "start:storybook": "npx conc \"npx nodemon -L\" \"npm run storybook\"",
+    "test": "npx stencil test --spec --e2e",
+    "test.watch": "npx stencil test --spec --e2e --watchAll",
+    "generate": "npx stencil generate",
+    "storybook": "npx storybook dev -p 6006",
+    "build-storybook": "npx storybook build",
     "lint": "npx eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "npx eslint \"src/**/*.{ts,tsx}\" --fix",
     "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT"
